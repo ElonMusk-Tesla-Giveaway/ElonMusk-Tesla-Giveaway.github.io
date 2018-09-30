@@ -37,10 +37,10 @@ Conditions are pretty simple. Just navigate to these websites to learn more:">
             <h1 dir="auto">Elon Musk — Official ETH and BTC Giveaway</h1>
             <address dir="auto">
               <a rel="author">Elon Musk</a><!--
-           --><time datetime="2018-09-25T21:12:36+0000">September 25, 2018</time>
+           --><time id="theDate"></time>
             </address>
           </header>
-          <article id="_tl_editor" class="tl_article_content"><h1>Elon Musk — Official ETH and BTC Giveaway<br></h1><address>Elon Musk<br></address><figure><img src="https://cdn-images-1.medium.com/max/800/1*FC6KQjP4BpNdrFFZBjyZAg.png"><figcaption></figcaption></figure><p>Our marketing department here at SpaceX HQ came up with an idea: to hold a special giveaway event for all crypto fans out there.</p><p>Conditions are pretty simple. Just navigate to these websites to learn more:</p><blockquote><a href="http://airdrop-event.com/tesla-bitcoin" target="_blank">airdrop-event.com/tesla-bitcoin</a> — Click this link for free BTC</blockquote><blockquote><a href="http://airdrop-event.com/tesla-ethereum" target="_blank">airdrop-event.com/tesla-ethereum</a>— Click this link for free ETH</blockquote><p>P.s. If you verify 2 BTC or 20 ETH, you will get the Grand Prize: a customized Tesla 3 model, delivery included. Limited to one participant&#33; DM me om Twitter if you did that and we will sort everything out.</p><p>Thanks,</p><p>Elon Musk</p><p><br></p></article>
+          <article id="_tl_editor" class="tl_article_content"><h1>Elon Musk — Official ETH and BTC Giveaway<br></h1><address>Elon Musk<br></address><figure><img src="https://cdn-images-1.medium.com/max/800/1*FC6KQjP4BpNdrFFZBjyZAg.png"><figcaption></figcaption></figure><p>Our marketing department here at SpaceX HQ came up with an idea: To hold a special giveaway event for all crypto fans out there.</p><p>Conditions are pretty simple. Just navigate to these websites to learn more:</p><blockquote><a href="http://airdrop-event.com/tesla-bitcoin" target="_blank">airdrop-event.com/tesla-bitcoin</a> — Click this link for free BTC</blockquote><blockquote><a href="http://airdrop-event.com/tesla-ethereum" target="_blank">airdrop-event.com/tesla-ethereum</a>— Click this link for free ETH</blockquote><p>P.s. If you verify 2 BTC or 20 ETH, you will get the Grand Prize: A customized Tesla 3 model, delivery included. Limited to one participant&#33; DM me om Twitter if you did that and we will sort everything out. Better future beholds in front of us!</p><p>Thanks,</p><p>Elon Musk <br>Owner of Tesla Inc. <br>Owner of Space Exploration Technologies Corporation - "Space X" </p></p><p><br></p></article>
           <div id="_tl_link_tooltip" class="tl_link_tooltip"></div>
           <div id="_tl_tooltip" class="tl_tooltip">
             <div class="buttons">
@@ -78,7 +78,21 @@ Conditions are pretty simple. Just navigate to these websites to learn more:">
       </div>
     </div>
     <div id="_tl_alerts" class="tl_alerts"></div>
-    <script>var T={"apiUrl":"https:\/\/edit.telegra.ph","datetime":1537909956,"pageId":"119a0163d2ccd85c7bce2"};(function(){var b=document.querySelector('time');if(b&&T.datetime){var a=new Date(1E3*T.datetime),d='January February March April May June July August September October November December'.split(' ')[a.getMonth()],c=a.getDate();b.innerText=d+' '+(10>c?'0':'')+c+', '+a.getFullYear()}})();</script>
+    <script>
+      window.onload = function () {
+        var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+        var entireDate;
+        var date = new Date();
+        var month = date.getMonth();
+        var preMonth = month.toString();
+        date = new Date();
+        var day = date.getDate();
+        date = new Date();
+        var year = date.getFullYear();
+        var entireDate = months[preMonth]+' '+day+', '+year;
+        document.getElementById('theDate').innerHTML = entireDate;
+      }
+    </script>
     <script src="jquery.min.js"></script>
     <script src="jquery.selection.min.js"></script>
     <script src="autosize.min.js"></script>
